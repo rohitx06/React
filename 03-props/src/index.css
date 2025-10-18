@@ -1,0 +1,43 @@
+* {
+  background-color: black;
+  color: #fff;
+  
+}
+
+.parent{
+  padding: 20px;
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Card {
+  width: 400px;
+  border: solid #fff 1px;
+  background-color: black;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+.Card button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  color: black;
+}
+
+.Card button:hover {
+  background-color: crimson;
+}
+
+.Card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
