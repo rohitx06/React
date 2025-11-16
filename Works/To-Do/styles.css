@@ -1,0 +1,124 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #eef1f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Title */
+h1 {
+  color: #222;
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Input Container */
+#todo-input {
+  width: 260px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  outline: none;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+#todo-input:focus {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.13);
+}
+
+/* Add Button */
+#add-btn {
+  padding: 12px 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 10px rgba(74,108,247,0.35);
+}
+
+#add-btn:hover {
+  background: #3858db;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(74,108,247,0.4);
+}
+
+/* Todo List */
+#todo-list {
+  list-style: none;
+  width: 330px;
+  margin-top: 30px;
+}
+
+/* Todo Item */
+#todo-list li {
+  background: #ffffff;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+}
+
+#todo-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Checkbox */
+#todo-list input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #4a6cf7;
+}
+
+/* Text */
+#todo-list span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  transition: 0.25s;
+}
+
+/* Delete Button */
+#todo-list button {
+  background: #ff4e58;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 10px rgba(255,78,88,0.25);
+}
+
+#todo-list button:hover {
+  background: #e63c45;
+  transform: scale(1.05);
+}
